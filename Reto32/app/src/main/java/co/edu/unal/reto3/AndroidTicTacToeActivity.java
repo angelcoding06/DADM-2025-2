@@ -32,7 +32,7 @@ public class AndroidTicTacToeActivity extends Activity {
 
         mInfoTextView = findViewById(R.id.information);
         mGame = new TicTacToeGame();
-        
+
         startNewGame();
 
         Button resetButton = findViewById(R.id.resetButton);

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:gravity="center_horizontal"
+    android:paddingTop="40dp">
+
+    <!-- Toolbar con menú -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1B5E20"
+        app:title="Tic Tac Toe"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Tablero 3x3 -->
+    <TableLayout
+        android:id="@+id/play_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TableRow android:gravity="center_horizontal">
+            <Button android:id="@+id/one" style="@style/GameButton"/>
+            <Button android:id="@+id/two" style="@style/GameButton"/>
+            <Button android:id="@+id/three" style="@style/GameButton"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <Button android:id="@+id/four" style="@style/GameButton"/>
+            <Button android:id="@+id/five" style="@style/GameButton"/>
+            <Button android:id="@+id/six" style="@style/GameButton"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <Button android:id="@+id/seven" style="@style/GameButton"/>
+            <Button android:id="@+id/eight" style="@style/GameButton"/>
+            <Button android:id="@+id/nine" style="@style/GameButton"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Texto de estado -->
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="info"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#A5D6A7"/>
+
+    <!-- Botón de reinicio -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar"
+        android:textColor="#FFFFFF"
+        android:background="#2E7D32"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

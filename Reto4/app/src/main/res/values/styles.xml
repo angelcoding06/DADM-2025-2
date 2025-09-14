@@ -1,0 +1,10 @@
+<resources>
+    <style name="GameButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">#1B5E20</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">70sp</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+</resources>
